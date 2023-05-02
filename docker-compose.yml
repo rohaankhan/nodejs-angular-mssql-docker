@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  backend:
+    build: .
+    # restart: always
+    container_name: sofy-api
+    ports:
+      - "4200:4200"
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_URL=${MYSQL_URL}
+      - IS_DEVELOPMENT=${IS_DEVELOPMENT}
+  mysql:
+    restart: always
+    image: "mysql:8.0.31"
+    container_name: sofy-database
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+  frontend:
+      depends_on:
+        - backend
+      build: ./frontend
+      ports: "4100:4100"
