@@ -8,7 +8,8 @@ This command will build the Docker images for the API, frontend, and SQL Server,
 
 ## Prerequisites
 To run this project, you need to have Docker and Docker Compose installed on your machine. If you don't have them installed, you can download them from the official Docker website:
-[Docker](https://www.docker.com/get-started/)
+[Docker](https://www.docker.com/get-started/),
+
 [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Configuration
