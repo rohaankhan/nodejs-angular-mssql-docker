@@ -4,7 +4,7 @@ This repository contains Dockerfiles and Docker Compose files to deploy a Node.j
 #Getting Started
 To get started with this project, clone the repository to your local machine and run the following command:
 docker-compose up --build
-This command will build the Docker images for the API, frontend, and SQL Server, and start the containers. The API will be available at http://localhost:4200, and the frontend will be available at '**http://localhost:4100**'.
+This command will build the Docker images for the API, frontend, and SQL Server, and start the containers. The API will be available at '**http://localhost:4200**', and the frontend will be available at '**http://localhost:4100**'.
 
 #Prerequisites
 To run this project, you need to have Docker and Docker Compose installed on your machine. If you don't have them installed, you can download them from the official Docker website:
