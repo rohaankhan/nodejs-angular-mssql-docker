@@ -13,7 +13,7 @@ To run this project, you need to have Docker and Docker Compose installed on you
 ## Configuration
 - '**SA_PASSWORD**': the password for the SQL Server "sa" user (default: '**P@ssw0rd**')
 - '**ACCEPT_EULA**': set this to Y to accept the SQL Server license terms (default: '**Y**')
-- '**MSSQL_PID**': the SQL Server edition to use (default: '**Developer**')
+- '**MONGO DB**': the SQL Server edition to use (default: '**Developer**')
 
 You can override these variables by creating a '.env' file in the root of the repository and setting the values there.
 
